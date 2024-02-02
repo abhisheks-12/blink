@@ -1,15 +1,18 @@
 {
-  "name": "blink",
-  "version": "1.0.0",
-  "description": "delivery app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.3.3"
-  }
+    "name": "blink",
+    "version": "1.0.0",
+    "description": "delivery app",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node ./src/server.ts",
+        "format:check": "npx prettier . --check",
+        "format:fix": "npx prettier . --write"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "3.2.4",
+        "typescript": "^5.3.3"
+    }
 }
