@@ -1,4 +1,15 @@
 function login(userName: string): boolean {
-    return true;
+    if (userName) {
+        return true;
+    }else{
+        return false;
+
+    }
+
+
+
+
 }
 
+login('abhishek');
+// eslint
