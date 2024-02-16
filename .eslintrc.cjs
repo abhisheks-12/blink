@@ -11,4 +11,9 @@ module.exports = {
         tsconfigRootDir: __dirname,
     },
     root: true,
+
+    rules: {
+        '@typescript-eslint/no-unused-expressions': 'error',
+        '@typescript-eslint/dot-notation': 'error',
+    },
 };
