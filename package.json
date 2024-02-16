@@ -8,7 +8,8 @@
         "format:check": "npx prettier . --check",
         "format:fix": "npx prettier . --write",
         "lint": "npx eslint .",
-        "lint:fix": "npx --fix"
+        "lint:fix": "npx eslint --fix",
+        "prepare": "husky"
     },
     "keywords": [],
     "author": "",
@@ -16,8 +17,17 @@
     "devDependencies": {
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
         "prettier": "3.2.4",
         "typescript": "^5.3.3",
         "typescript-eslint": "^7.0.1"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npx prettier . --write",
+            "npx eslint .",
+            "npx eslint --fix"
+        ]
     }
 }
