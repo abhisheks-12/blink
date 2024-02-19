@@ -1,12 +1,3 @@
-function login(userName: string): string {
-    const names = {
-        first: 'abhi',
-    };
+import { Config } from './config/index';
 
-    console.log(names.first);
-
-    return userName;
-}
-
-login('abhishek');
-// eslint
+console.log(Config.PORT);
