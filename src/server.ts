@@ -1,3 +1,10 @@
+import app from './app';
 import { Config } from './config/index';
 
-console.log(Config.PORT);
+const startServer = () => {
+    app.listen(Config.PORT, () => {
+        console.log(`Server is running on port ${Config.PORT}...`);
+    });
+};
+
+startServer();
