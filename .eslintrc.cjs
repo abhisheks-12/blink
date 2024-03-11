@@ -15,5 +15,7 @@ module.exports = {
     rules: {
         '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/dot-notation': 'error',
+        '@typescript-eslint/no-misused-promises': 'off',
+        '@typescript-eslint/require-await': 'off',
     },
 };
