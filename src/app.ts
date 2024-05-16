@@ -28,4 +28,8 @@ app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
     });
 });
 
+app.get('/home', (req, res) => {
+    res.status(200).send('<h1>Home</h1>');
+});
+
 export default app;
